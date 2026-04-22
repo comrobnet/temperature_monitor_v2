@@ -1,7 +1,7 @@
-#include "temperature_monitor.hpp"
-
 #include <iostream>
 #include <memory>
+
+#include "temperature_monitor.hpp"
 
 // TODO: LED initialization could be moved to init if needed
 TemperatureMonitor::TemperatureMonitor()

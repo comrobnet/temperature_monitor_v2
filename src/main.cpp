@@ -21,12 +21,11 @@ int main() {
         const auto loop_start = clock::now();
 
         monitor.Step();
-        //monitor.PrintStatus();
+        // monitor.PrintStatus();
 
         const auto loop_end = clock::now();
-        const auto elapsed = loop_end - loop_start;
 
-        if (elapsed < kLoopPeriod) {
+        if (const auto elapsed = loop_end - loop_start; elapsed < kLoopPeriod) {
             std::this_thread::sleep_for(kLoopPeriod - elapsed);
         }
     }

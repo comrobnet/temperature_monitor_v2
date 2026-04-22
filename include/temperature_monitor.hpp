@@ -1,11 +1,12 @@
 #ifndef TEMPERATURE_MONITOR_HPP
 #define TEMPERATURE_MONITOR_HPP
 
+#include <memory>
+
 #include "eeprom.hpp"
 #include "led.hpp"
 #include "temperature_sensor.hpp"
 
-#include <memory>
 
 class TemperatureMonitor {
 public:

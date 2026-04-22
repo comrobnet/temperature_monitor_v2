@@ -1,6 +1,7 @@
+#include <cstring>
+
 #include "eeprom.hpp"
 
-#include <cstring>
 
 Eeprom::Eeprom() {
     // initialize mock data
@@ -36,7 +37,7 @@ bool Eeprom::ReadDeviceInfo() {
 }
 
 // Read mock eeprom data and save it to the buffer
-bool Eeprom::Read_(std::uint16_t addr, std::uint8_t* buf, std::size_t len) const {
+bool Eeprom::Read_(const std::uint16_t addr, std::uint8_t* buf, const std::size_t len) const {
     if (buf == nullptr) {
         return false;
     }

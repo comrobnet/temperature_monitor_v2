@@ -1,6 +1,6 @@
-#include "led.hpp"
-
 #include <utility>
+
+#include "led.hpp"
 
 Led::Led(std::string name) : name_(std::move(name))
 {
